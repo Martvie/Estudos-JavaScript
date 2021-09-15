@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos em DOM</title>
+</head>
+<style>
+    body {
+        background: rgb(9, 116, 179);
+        color: blanchedalmond;
+        font: normal 18pt arial;
+    }
+</style>
+<body>
+    <h1>Iniciando meus Estudos em DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> em <strong>JavaScript</strong></p>
+    <div id='msg'> Clique em mim</div> <!--poderia utililar um nome no lugar de id-->
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] /* O zero indica o primeiro item da lista*/
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        p1.style.color = 'black'
+        window.document.write('O paragráfo selecionado está escrito: ' + p1.innerText)
+        var d1 = window.document.querySelector('div#msg')
+        d1.style.color = 'red'
+    </script>
+</body>
+</html>
