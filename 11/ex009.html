@@ -8,23 +8,11 @@
 </head>
 <body>
     <h1>Nacionalidade</h1>
-    Digite Sua <strong>Nacionalidade</strong>: <input type="text" id=nacio>
+    Digite o pais onde você <strong>Nasceu</strong>: <input type="text" id=nacio>
     <input type="button" value="Verificar" onclick="averiguação()">
     <div id='res'>
         
     </div>
-    <script>
-        function averiguação(){
-            var txt = window.document.getElementById('nacio')
-            var nac = String(txt.value)
-            var res = window.document.getElementById('res')
-            res.innerHTML = `Nascido no ${nac} `
-            if (nac!='BRASIL' && nac!= 'brasil'){
-                res.innerHTML += 'Você é Estrangeiro'
-            } else{
-                res.innerHTML += 'Você é Brasileiro'
-            }
-        }
-    </script>
+    <script src="html-ex009.js"></script>
 </body>
 </html>
